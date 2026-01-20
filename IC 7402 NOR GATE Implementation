@@ -1,0 +1,18 @@
+module nor_ic7402_gate(
+
+    input  a1, b1,
+    input  a2, b2,
+    input  a3, b3,
+    input  a4, b4,
+    output y1,
+    output y2,
+    output y3,
+    output y4
+);
+
+    assign y1 = ~(a1|b1);
+    assign y2 = ~(a2|b2);
+    assign y3 = ~(a3|b3);
+    assign y4 = ~(a4|b4);
+
+endmodule
